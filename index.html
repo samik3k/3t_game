@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CodePen - A Pen by  sam3000</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+	<div class="game-wrapper">
+		<div class="game-box js-game">
+			<div class="game-info">
+				<div class="game-title">Крестики за Нолики</div>
+			</div>
+			<div class="game-player left-player player-1 current-player js-current-player js-player">
+				<div class="player-name js-player-name">Игрок 1</div>
+				<div class="player-symbol js-player-symbol">x</div>
+			</div>
+			<div class="game-player right-player player-2 js-player">
+				<div class="player-name js-player-name">Игрок 2</div>
+				<div class="player-symbol js-player-symbol">o</div>
+			</div>
+			<div class="game-field">
+				<div class="game-obj js-game-obj" data-row="1" data-col="1"></div>
+				<div class="game-obj js-game-obj" data-row="1" data-col="2"></div>
+				<div class="game-obj js-game-obj" data-row="1" data-col="3"></div>
+				<div class="game-obj js-game-obj" data-row="2" data-col="1"></div>
+				<div class="game-obj js-game-obj" data-row="2" data-col="2"></div>
+				<div class="game-obj js-game-obj" data-row="2" data-col="3"></div>
+				<div class="game-obj js-game-obj" data-row="3" data-col="1"></div>
+				<div class="game-obj js-game-obj" data-row="3" data-col="2"></div>
+				<div class="game-obj js-game-obj" data-row="3" data-col="3"></div>
+			</div>
+			<div class="game-over js-game-over">
+				<div class="game-winner-name js-game-winner"></div>
+				<div class="game-restart">
+					<button class="game-restart-button js-game-restart">Restart</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script src='./js/game.js'></script>
+</body>
+</html>
